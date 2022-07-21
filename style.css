@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.quest {
+  display: flex;
+  width: 300px;
+}
+.quest #searchInput {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+}
+.quest button {
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #f28482;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.quest button:hover {
+  background-color: #444;
+}
+
+.result {
+  width: 300px;
+  display: none;
+  border: 1px dotted #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+.info .temp {
+  flex: 1;
+  text-align: center;
+}
+.info .wind{
+  flex: 1;
+  text-align: center;
+}
+.tempTitle,
+.windTitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.tempInfo,
+.windInfo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+.windInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+.windArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.windPoint {
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transform-origin: left;
+}
+
+.notice {
+  color: #fff;
+  padding-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}

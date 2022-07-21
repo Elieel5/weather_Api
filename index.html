@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Clima</h1>
+
+    <form class="quest">
+      <label for="searchInput" class="sr-only"></label>
+      <input type="search" id="searchInput" placeholder="Digite" />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="result">
+      <div class="title">--</div>
+
+      <div class="info">
+        <div class="temp">
+          <div class="tempTitle">Temperatura</div>
+          <div class="tempInfo">-- <sup>ºC</sup></div>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="image of ilustration" />
+        </div>
+        <div class="wind">
+          <div class="windTitle">Vento</div>
+          <div class="windInfo">-- <span>km/h</span></div>
+          <div class="windArea">
+            <div class="windPoint" style="transform: rotate(0deg)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice"></div>
+
+    <footer>Developer Eliel Ribeiro</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
